@@ -1,0 +1,36 @@
+{
+  "name": "equilibrium",
+  "scripts": {
+    "build": "lerna run --ignore server-template --ignore admin-template --sort --include-dependencies build",
+    "test": "lerna run --parallel --ignore server-template --ignore admin-template test",
+    "test:e2e": "lerna run --parallel test:e2e",
+    "check-format": "lerna run --parallel check-format",
+    "format": "lerna run --parallel format",
+    "lint": "lerna run --parallel --ignore server-template --ignore admin-template lint",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "prisma:generate": "lerna run --scope @equilibrium/server prisma:generate",
+    "migrate:save": "lerna run --scope @equilibrium/server migrate:save",
+    "migrate:up": "lerna run --scope @equilibrium/server migrate:up",
+    "generate-graphql-schema": "lerna run --scope @equilibrium/server generate-graphql-schema",
+    "check-graphql-schema": "lerna run --scope @equilibrium/server check-graphql-schema",
+    "generate-graphql-code": "graphql-codegen",
+    "generate": "run-s generate-graphql-schema generate-graphql-code",
+    "build-storybook": "lerna run build-storybook",
+    "generate-test-data-service": "lerna run --scope @equilibrium/generator generate-test-data-service"
+  },
+  "dependencies": {
+    "lerna": "^3.22.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.17.7",
+    "@graphql-codegen/typescript": "^1.17.7",
+    "graphql": "^15.3.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  }
+}

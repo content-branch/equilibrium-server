@@ -1,0 +1,9 @@
+schema: "packages/equilibrium-server/src/schema.graphql"
+generates:
+  packages/equilibrium-client/src/models.ts:
+    - typescript
+  packages/equilibrium-generator/src/models.ts:
+    - typescript
+hooks:
+  afterAllFileWrite:
+    - prettier --write
