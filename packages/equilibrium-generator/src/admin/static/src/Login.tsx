@@ -7,6 +7,7 @@ import { Button } from "@material-ui/core";
 import "./login.scss";
 
 const CLASS_NAME = "login-page";
+const SERVER = 'http://localhost:3000';
 
 const Login = ({ theme }: { theme?: object }) => {
   const [username, setUsername] = useState("");
@@ -26,7 +27,7 @@ const Login = ({ theme }: { theme?: object }) => {
         <div className={`${CLASS_NAME}__wrapper`}>
           <div className={`${CLASS_NAME}__box`}>
             <img
-              src="https://amplication.com/assets/graphql.png"
+              src="https://res.cloudinary.com/hangar-worldwide/image/upload/v1632160297/Equilibrium/graphql_pxwtvg.png"
               alt="GraphQL API"
             />
             <h2>Connect via GraphQL</h2>
@@ -38,14 +39,14 @@ const Login = ({ theme }: { theme?: object }) => {
               type="button"
               variant="contained"
               color="primary"
-              href="/graphql"
+              href={`${SERVER}/graphql`}
             >
               Continue
             </Button>
           </div>
           <div className={`${CLASS_NAME}__box`}>
             <img
-              src="https://amplication.com/assets/react-admin.png"
+              src="https://res.cloudinary.com/hangar-worldwide/image/upload/v1632160330/Equilibrium/react-admin_icel9s.png"
               alt="React-Admin"
             />
             <h2>Admin UI</h2>
@@ -65,7 +66,7 @@ const Login = ({ theme }: { theme?: object }) => {
                 />
               </label>
               <label>
-                <span>password</span>
+                <span>Password</span>
 
                 <input
                   name="password"
@@ -81,7 +82,7 @@ const Login = ({ theme }: { theme?: object }) => {
           </div>
           <div className={`${CLASS_NAME}__box`}>
             <img
-              src="https://amplication.com/assets/restapi.png"
+              src="https://res.cloudinary.com/hangar-worldwide/image/upload/v1632160355/Equilibrium/restapi_icpita.png"
               alt="REST API"
             />
             <h2>Connect via REST API</h2>
@@ -93,20 +94,13 @@ const Login = ({ theme }: { theme?: object }) => {
               type="button"
               variant="contained"
               color="primary"
-              href="/api"
+              href={`${SERVER}/api`}
             >
               Continue
             </Button>
           </div>
 
           <Notification />
-        </div>
-        <div className={`${CLASS_NAME}__read-more`}>
-          <span>Read </span>
-          <a href="https://docs.amplication.com/docs/api" target="docs">
-            Equilibrium docs
-          </a>
-          <span> to learn more</span>
         </div>
       </div>
     </ThemeProvider>

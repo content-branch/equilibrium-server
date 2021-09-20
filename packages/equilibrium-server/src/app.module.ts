@@ -24,7 +24,7 @@ import { RootStorageModule } from './core/storage/root-storage.module';
         '..',
         '..',
         '..',
-        'amplication-client',
+        'equilibrium-client',
         'build'
       )
     }),

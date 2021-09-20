@@ -1,59 +1,63 @@
-// .App {
-//   .MuiAppBar-colorSecondary {
-//     background-color: black;
-
-//     .RaAppBar-menuButton-13 {
-//       background-color: yellow;
-//     }
-//   }
-
-//   .MuiDrawer-paper {
-//     background-color: red;
-
-//     .MuiListItemIcon-root {
-//       color: white;
-//     }
-//   }
-
-//   .MuiButton-textPrimary {
-//     background-color: purple;
-//     margin: 0 0.5rem;
-//     color: white;
-//     padding: 0.5rem 1rem;
-
-//     &:hover {
-//       background-color: blue;
-//     }
-//   }
-
-//   .MuiTableRow-head {
-//     .MuiTableCell-head {
-//       background-color: black;
-//       color: white;
-//     }
-
-//     .MuiTableSortLabel-root {
-//       &:hover {
-//         color: red;
-
-//         .MuiTableSortLabel-icon {
-//           color: red !important;
-//         }
-//       }
-//       .MuiTableSortLabel-icon {
-//         color: white !important;
-//       }
-//     }
-//     .MuiTableSortLabel-active {
-//       color: green;
-
-//       .MuiTableSortLabel-icon {
-//         color: green !important;
-//       }
-//     }
-//   }
-
-//   .MuiFormLabel-root {
-//     color: magenta;
-//   }
-// }
+.App {
+    .MuiAppBar-colorSecondary {
+      background-color: #108ee9;
+  
+      .RaAppBar-menuButton-13 {
+        background-color: #2db7f5;
+      }
+    }
+  
+    .MuiDrawer-paper {
+      background-color: #fcfcfc;
+  
+      .MuiListItemIcon-root {
+        color: #455560;
+      }
+    }
+  
+    .MuiButton-textPrimary {
+      background-color: #108ee9;
+      margin: 0 0.5rem;
+      color: #fcfcfc;
+      padding: 0.5rem 1rem;
+  
+      &:hover {
+        background-color: #2db7f5;
+      }
+    }
+  
+    .MuiTableRow-head {
+      .MuiTableCell-head {
+        background-color: #108ee9;
+        color: #fcfcfc;
+      }
+  
+      .MuiTableSortLabel-root {
+        &:hover {
+          color: #fcfcfc;
+  
+          .MuiTableSortLabel-icon {
+            color: #fcfcfc !important;
+          }
+        }
+        .MuiTableSortLabel-icon {
+          color: fcfcfc !important;
+        }
+      }
+      .MuiTableSortLabel-active {
+          font-weight: 600;
+          color: #fcfcfc;
+  
+        .MuiTableSortLabel-icon {
+          color: #2db7f5 !important;
+        }
+      }
+    }
+  
+    .MuiFormLabel-root {
+      color:#455560;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+  
