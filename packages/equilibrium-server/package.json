@@ -34,7 +34,7 @@
     "@content-branch/equilibrium-container": "^0.6.0",
     "@content-branch/equilibrium-data": "^0.6.4",
     "@content-branch/equilibrium-deployer": "^0.6.0",
-    "@equilibrium/generator": "^0.6.5",
+    "@equilibrium/generator": "^0.6.6",
     "@codebrew/nestjs-storage": "^0.1.4",
     "@extra-set/difference": "^2.1.52",
     "@google-cloud/cloudbuild": "^2.0.3",
